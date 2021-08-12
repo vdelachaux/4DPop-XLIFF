@@ -1,0 +1,251 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": ":xliff:WindowPalette",
+	"windowMinWidth": 250,
+	"width": 250,
+	"height": 360,
+	"markerHeader": 3840,
+	"markerBody": -14336,
+	"markerBreak": -9216,
+	"markerFooter": -4096,
+	"events": [
+		"onLoad",
+		"onOutsideCall",
+		"onMenuSelect",
+		"onCloseBox",
+		"onUnload",
+		"onTimer",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 250,
+					"height": 338,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#E7EEF6",
+					"stroke": "#E7EEF6"
+				},
+				"XLIFF.List.Info.Resize": {
+					"type": "list",
+					"top": 1,
+					"left": 0,
+					"width": 250,
+					"height": 336,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "<>Lst_strings",
+					"enterable": false,
+					"hideFocusRing": true,
+					"scrollbarVertical": "hidden",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"stroke": "#000000",
+					"fill": "transparent",
+					"class": "System_Petit",
+					"borderStyle": "none",
+					"method": "ObjectMethods/XLIFF.List.Info.Resize.4dm",
+					"events": [
+						"onClick",
+						"onLosingFocus",
+						"onSelectionChange",
+						"onBeginDragOver"
+					]
+				},
+				"info.bottom": {
+					"type": "input",
+					"top": 347,
+					"left": 0,
+					"width": 250,
+					"height": 52,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "<>Txt_Target",
+					"class": "System_Normal",
+					"focusable": false,
+					"fill": "#DFE6EF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"info.header": {
+					"type": "picture",
+					"top": 337,
+					"left": 0,
+					"width": 250,
+					"height": 10,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"pictureFormat": "tiled",
+					"picture": "Images/info.header.tif"
+				},
+				"Footer.background": {
+					"type": "picture",
+					"top": 337,
+					"left": 0,
+					"width": 250,
+					"height": 23,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/MAC/FooterBack.tiff"
+				},
+				"bUtil3": {
+					"type": "button",
+					"top": 337,
+					"left": 31,
+					"width": 32,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "<>bUtil",
+					"tooltip": ":xliff:TipString",
+					"class": "Default",
+					"focusable": false,
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 342,
+					"left": 67,
+					"width": 122,
+					"height": 13,
+					"sizingY": "move",
+					"class": "System_Petit",
+					"text": "<<>Txt_CurrentFileName>"
+				},
+				"Image15": {
+					"type": "picture",
+					"top": 336,
+					"left": 193,
+					"width": 17,
+					"height": 24,
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/MAC/arrows.tiff"
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 337,
+					"left": 63,
+					"width": 147,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "<>bFiles",
+					"class": "System_Petit",
+					"focusable": false,
+					"style": "toolbar",
+					"method": "ObjectMethods/Bouton1.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick",
+						"onLongClick"
+					]
+				},
+				"bUtil5": {
+					"type": "button",
+					"top": 337,
+					"left": 0,
+					"width": 32,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "<>bUtil",
+					"tooltip": ":xliff:TipToggleWindow",
+					"class": "System_Petit",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/MAC/Switch.png",
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/Images/MAC/FooterButtonBack.png",
+					"method": "ObjectMethods/bUtil5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton 3D2": {
+					"type": "button",
+					"top": 337,
+					"left": 31,
+					"width": 32,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "<>bUtil",
+					"tooltip": ":xliff:TipString",
+					"class": "System_Petit",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/MAC/Show.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/Images/MAC/FooterButtonBack.png",
+					"method": "ObjectMethods/Bouton 3D2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"info.1": {
+					"type": "line",
+					"top": 337,
+					"left": 0,
+					"width": 250,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#808B9A"
+				},
+				"_timerEvent": {
+					"type": "input",
+					"top": 10,
+					"left": 294,
+					"width": 112,
+					"height": 13,
+					"sizingX": "move",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FF6600",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"fill": "#FFFFC0",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		null
+	],
+	"editor": {
+		"activeView": "Vue 1",
+		"defaultView": "Vue 1",
+		"views": {
+			"Vue 1": {},
+			"Vue 2": {},
+			"Vue 3": {},
+			"Vue 4": {},
+			"Vue 5": {},
+			"Vue 6": {},
+			"Vue 7": {},
+			"Vue 8": {},
+			"Vue 9": {}
+		}
+	}
+}

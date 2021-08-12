@@ -1,0 +1,84 @@
+{
+	"File_Infos": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "<xliff>",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "<file>",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "<note>",
+				"ref": 3,
+				"editable": true
+			}
+		]
+	},
+	"managed_language_codes": {
+		"lineHeight": 18,
+		"editable": true,
+		"items": [
+			{
+				"text": "en",
+				"ref": 1,
+				"editable": true
+			},
+			{
+				"text": "fr",
+				"ref": 2,
+				"editable": true
+			},
+			{
+				"text": "de",
+				"ref": 3,
+				"editable": true
+			},
+			{
+				"text": "it",
+				"ref": 4,
+				"editable": true
+			},
+			{
+				"text": "ja",
+				"ref": 5,
+				"editable": true
+			},
+			{
+				"text": "es",
+				"ref": 6,
+				"editable": true
+			},
+			{
+				"text": "zh",
+				"ref": 7,
+				"editable": true
+			},
+			{
+				"text": "ru",
+				"ref": 8,
+				"editable": true
+			},
+			{
+				"text": "sv",
+				"ref": 9,
+				"editable": true
+			},
+			{
+				"text": "pl",
+				"ref": 10,
+				"editable": true
+			},
+			{
+				"text": "cs",
+				"ref": 11,
+				"editable": true
+			}
+		]
+	}
+}

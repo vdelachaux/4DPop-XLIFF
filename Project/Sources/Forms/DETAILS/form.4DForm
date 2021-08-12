@@ -1,0 +1,408 @@
+{
+	"destination": "detailScreen",
+	"memorizeGeometry": true,
+	"width": 468,
+	"height": 251,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"_background": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 468,
+					"height": 251,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "transparent"
+				},
+				"form-height": {
+					"type": "input",
+					"top": 0,
+					"left": 628,
+					"width": 105,
+					"height": 12,
+					"sizingX": "move",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FF6600",
+					"fontFamily": "Monaco",
+					"fontSize": 10,
+					"focusable": false,
+					"fill": "#FFFF00",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"key.down": {
+					"type": "button",
+					"top": 35,
+					"left": 628,
+					"width": 105,
+					"height": 18,
+					"shortcutKey": "[down arrow]",
+					"style": "flat",
+					"text": "Down Arrow",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"stroke": "#FF6600",
+					"method": "ObjectMethods/key.down.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"key.up": {
+					"type": "button",
+					"top": 73,
+					"left": 628,
+					"width": 105,
+					"height": 18,
+					"shortcutKey": "[up arrow]",
+					"style": "flat",
+					"text": "Up Arrow",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"stroke": "#FF6600",
+					"method": "ObjectMethods/key.up.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"key.left": {
+					"type": "button",
+					"top": 54,
+					"left": 581,
+					"width": 105,
+					"height": 18,
+					"shortcutKey": "[left arrow]",
+					"style": "flat",
+					"text": "Left Arrow",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"stroke": "#FF6600",
+					"method": "ObjectMethods/key.left.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"key.right": {
+					"type": "button",
+					"top": 54,
+					"left": 688,
+					"width": 105,
+					"height": 18,
+					"shortcutKey": "[right arrow]",
+					"style": "flat",
+					"text": "Right Arrow",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"stroke": "#FF6600",
+					"method": "ObjectMethods/key.right.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"resname_box": {
+					"type": "input",
+					"top": 19,
+					"left": 104,
+					"width": 230,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "<>Txt_Resname",
+					"method": "ObjectMethods/resname_box.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"id_box": {
+					"type": "input",
+					"top": 55,
+					"left": 103,
+					"width": 72,
+					"height": 16,
+					"dataSource": "<>Txt_ID",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/id_box.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"unit_source_box.resize": {
+					"type": "input",
+					"top": 88,
+					"left": 103,
+					"width": 338,
+					"height": 52,
+					"sizingX": "grow",
+					"method": "ObjectMethods/unit_source_box.resize.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"unit_target_box.move.resize": {
+					"type": "input",
+					"top": 183,
+					"left": 103,
+					"width": 338,
+					"height": 52,
+					"sizingX": "grow",
+					"method": "ObjectMethods/unit_target_box.move.resize.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"unit_translate.move": {
+					"type": "checkbox",
+					"top": 154,
+					"left": 103,
+					"width": 130,
+					"height": 17,
+					"text": "translate=\"no\"",
+					"focusable": false,
+					"method": "ObjectMethods/unit_translate.move.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"resname_label": {
+					"type": "text",
+					"top": 19,
+					"left": 9,
+					"width": 75,
+					"height": 16,
+					"textAlign": "right",
+					"text": "\"resname\""
+				},
+				"resname_box.alert": {
+					"type": "picture",
+					"top": 10,
+					"left": 86,
+					"width": 24,
+					"height": 24,
+					"pictureFormat": "truncatedTopLeft",
+					"picture": "/RESOURCES/Images/alert_small.png"
+				},
+				"id_label": {
+					"type": "text",
+					"top": 55,
+					"left": 9,
+					"width": 75,
+					"height": 16,
+					"textAlign": "right",
+					"text": "\"id\""
+				},
+				"id_box.alert": {
+					"type": "picture",
+					"top": 46,
+					"left": 85,
+					"width": 24,
+					"height": 24,
+					"pictureFormat": "truncatedTopLeft",
+					"picture": "/RESOURCES/Images/alert_small.png"
+				},
+				"unit_source_icon": {
+					"type": "button",
+					"top": 88,
+					"left": 62,
+					"width": 30,
+					"height": 30,
+					"class": "System_Normal",
+					"focusable": false,
+					"style": "circular",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"unit_target_icon.move": {
+					"type": "button",
+					"top": 183,
+					"left": 61,
+					"width": 30,
+					"height": 30,
+					"class": "System_Normal",
+					"focusable": false,
+					"style": "circular",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"unit_target_up.move": {
+					"type": "button",
+					"top": 155,
+					"left": 425,
+					"width": 16,
+					"height": 16,
+					"sizingX": "move",
+					"tooltip": ":xliff:TipToggleWindow",
+					"class": "System_Petit",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/arrow_up.png",
+					"textPlacement": "center",
+					"style": "custom",
+					"method": "ObjectMethods/unit_target_up.move.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"unit_target_down.move": {
+					"type": "button",
+					"top": 155,
+					"left": 402,
+					"width": 16,
+					"height": 16,
+					"sizingX": "move",
+					"tooltip": ":xliff:TipToggleWindow",
+					"class": "System_Petit",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/arrow_down.png",
+					"textPlacement": "center",
+					"style": "custom",
+					"method": "ObjectMethods/unit_target_down.move.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"focus": {
+					"type": "input",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"sizingX": "move",
+					"sizingY": "move",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/focus.4dm",
+					"events": [
+						"onGettingFocus"
+					]
+				},
+				"unit_platform.button": {
+					"type": "button",
+					"top": 46,
+					"left": 362,
+					"width": 92,
+					"height": 33,
+					"sizingX": "move",
+					"focusable": false,
+					"icon": "/RESOURCES/images/mac_win.png",
+					"popupPlacement": "linked",
+					"style": "toolbar",
+					"method": "ObjectMethods/unit_platform.button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"unit_resname.FillIn.button": {
+					"type": "button",
+					"top": 16,
+					"left": 340,
+					"width": 24,
+					"height": 22,
+					"sizingX": "move",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/status_action.png",
+					"popupPlacement": "separated",
+					"style": "custom",
+					"method": "ObjectMethods/unit_resname.FillIn.button.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick",
+						"onLongClick"
+					]
+				},
+				"unit_source_M_box": {
+					"type": "input",
+					"top": 88,
+					"left": 103,
+					"width": 338,
+					"height": 52,
+					"sizingX": "grow",
+					"styledText": true,
+					"method": "ObjectMethods/unit_source_M_box.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				},
+				"unit_target_M_box": {
+					"type": "input",
+					"top": 183,
+					"left": 103,
+					"width": 338,
+					"height": 52,
+					"sizingX": "grow",
+					"styledText": true,
+					"method": "ObjectMethods/unit_target_M_box.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterEdit"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"_background"
+				]
+			},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

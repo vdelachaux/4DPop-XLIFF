@@ -1,0 +1,1 @@
+doc_OBJET_LOCATION(<>Txt_CurrentFile_Path; "File_Path"; 0; Align center:K42:3)

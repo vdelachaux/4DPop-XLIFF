@@ -1,0 +1,203 @@
+{
+	"00_dev": {
+		"methods": [
+			"00_RUN",
+			"00_TEST"
+		]
+	},
+	"Component": {
+		"groups": [
+			"libairies",
+			"private",
+			"public"
+		]
+	},
+	"Demo": {
+		"methods": [
+			"Demo_Init"
+		]
+	},
+	"doc": {
+		"methods": [
+			"Compiler_doc",
+			"doc_Duplicate_Folder",
+			"doc_gTxt_BytesToString",
+			"doc_gTxt_Path",
+			"doc_OBJET_LOCATION",
+			"FILE_GetLastItemFromPath",
+			"FILE_GetVolumeName"
+		]
+	},
+	"env": {
+		"methods": [
+			"Compiler_env",
+			"env_Boo_Is_a_Component",
+			"env_Txt_HostFolder"
+		]
+	},
+	"form": {
+		"methods": [
+			"COMPILER_form",
+			"form_timerEvent"
+		]
+	},
+	"libairies": {
+		"groups": [
+			"doc",
+			"env",
+			"form",
+			"lsth",
+			"str",
+			"toolbox",
+			"xml"
+		],
+		"methods": [
+			"Compiler_",
+			"object_TOUCH"
+		]
+	},
+	"lsth": {
+		"methods": [
+			"Compiler_lsth",
+			"lsth_DELETE_ITEM",
+			"Lsth_DISPLAY_SCROLLBAR",
+			"lsth_Lon_CountFirstLevelItems",
+			"lsth_Lon_Get_SublistReference"
+		]
+	},
+	"mnu": {
+		"methods": [
+			"COMPILER_mnu",
+			"mnu_LOAD_MENU",
+			"mnu_Load_menu_from_file",
+			"mnu_RELEASE_MENU"
+		]
+	},
+	"obj": {
+		"methods": [
+			"COMPILER_obj",
+			"Obj_CENTER",
+			"obj_DISPLAY_LOCALIZED_OBJECTS",
+			"obj_Get_bottom",
+			"obj_Get_height",
+			"obj_Get_left",
+			"obj_Get_pointer",
+			"obj_Get_right",
+			"obj_Get_top",
+			"obj_Get_width",
+			"obj_HORIZONTAL_ALIGNMENT",
+			"obj_SEND_EVENT",
+			"obj_SET_BOTTOM",
+			"obj_SET_HEIGHT",
+			"obj_SET_LEFT",
+			"obj_SET_RIGHT",
+			"obj_SET_TOP",
+			"obj_SET_VISIBLE",
+			"obj_SET_WIDTH",
+			"obj_Txt_3DButton_Format",
+			"object_ENABLE"
+		]
+	},
+	"private": {
+		"groups": [
+			"XLIFF"
+		],
+		"methods": [
+			"COMPILER_Editor",
+			"DETAILS_AFTER_MODIFICATION",
+			"DETAILS_LOAD",
+			"DETAILS_ON_RESIZE",
+			"DETAILS_platform",
+			"DETAILS_SET_LANGUAGES",
+			"DETAILS_UPDATE",
+			"EDITOR_Autofill",
+			"EDITOR_Boo_handler",
+			"EDITOR_DELETE",
+			"EDITOR_GET_FILE_LIST",
+			"EDITOR_HIDE_SHOW_ATTRIBUTES",
+			"Editor_init",
+			"EDITOR_LOAD_FILE",
+			"EDITOR_MAIN",
+			"EDITOR_MENUS",
+			"EDITOR_MODIFIED",
+			"EDITOR_NEW",
+			"EDITOR_NEW_UNIT",
+			"EDITOR_save",
+			"EDITOR_SCREEN_UPDATE",
+			"EDITOR_SEARCH",
+			"MENU_COPY",
+			"MENU_PASTE",
+			"PREFERENCES"
+		],
+		"forms": [
+			"ATTRIBUTES",
+			"DETAILS",
+			"EDITOR",
+			"PALETTE",
+			"PREFERENCES",
+			"XLIFF_FILE_INFOS",
+			"XLIFF_Note"
+		]
+	},
+	"public": {
+		"methods": [
+			"COMPILER_xliff",
+			"xliff_EDITOR",
+			"xliff_STRING_LIST_TO_ARRAY",
+			"xliff_toJSON",
+			"xliff_Txt_Format",
+			"xliff_Txt_Get_Indexed_String"
+		]
+	},
+	"str": {
+		"methods": [
+			"Compiler_str",
+			"str_gBoo_Equal",
+			"str_gLon_Occurence_Number",
+			"str_gTxt_Encode_Text",
+			"str_Txt_Decode_Text"
+		]
+	},
+	"toolbox": {
+		"groups": [
+			"mnu",
+			"obj"
+		],
+		"methods": [
+			"Compiler_Methods",
+			"Compiler_Util",
+			"dev_ON_ERROR",
+			"env_UPDATE_RESOURCES",
+			"lstb_AUTOMATIC_SCROOLBARS",
+			"NO_ERROR",
+			"RECOVER_WINDOW",
+			"util_getResourceImage",
+			"util_PASTE",
+			"win_GO_TO_PAGE",
+			"win_RESIZE_FROM_PAGE"
+		]
+	},
+	"XLIFF": {
+		"methods": [
+			"XLIFF_DEFAULT_LANGUAGES",
+			"XLIFF_EDITOR_INFORMATIONS",
+			"XLIFF_EDITOR_Lon_Objects_Method",
+			"XLIFF_EDITOR_PROPERTIES",
+			"XLIFF_EDITOR_SAVE_FILE",
+			"xliff_ON_ERROR",
+			"XLIFF_parseFile",
+			"xliff_Property_Group",
+			"xliff_Txt_Language",
+			"xliff_Txt_Localized_Path"
+		]
+	},
+	"xml": {
+		"methods": [
+			"xml_Error_text",
+			"xml_GET_ATTRIBUTES_ARRAYS",
+			"xml_NO_ERROR",
+			"xml_Validation"
+		]
+	},
+	"trash": {}
+}

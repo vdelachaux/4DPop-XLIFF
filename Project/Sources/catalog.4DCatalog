@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="4DPop XLIFF" uuid="08BBE3B98072410FBAE6DFFF3A800826" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<base_extra package_name="4DPop XLIFF" structure_file_name="4DPop XLIFF" data_file_path=":Data:4DPop XLIFF.4DD" __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
+		<temp_folder folder_selector="data"/>
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

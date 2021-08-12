@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="18">
+	<com.4d>
+		<database>
+			<cache size_fixed="32" size_maximum="100" size_minimum="16" size_reserved="128"/>
+			<misc standard_xpath="false"/>
+		</database>
+		<compiler>
+			<options compilation_path="3" fat_binary="true" target="all"/>
+			<typage default_for_button="2"/>
+			<method_suffix arrays="" interprocess_arrays="" interprocess_variables="" methods="" variables=""/>
+		</compiler>
+		<interface>
+			<user print_progress="false" splash_screen="false"/>
+			<shortcuts>
+				<accept_input_form alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+				<cancel_input_form alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+				<add_subform alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+			</shortcuts>
+		</interface>
+		<general execute_host_database_event="true">
+			<mover always_display_dialog="2"/>
+		</general>
+		<sql>
+			<publication port_number="1919"/>
+		</sql>
+		<server>
+			<network>
+				<options publication_name="XLIFF Editor" publish_at_startup="false" use_legacy_network_layer="false"/>
+			</network>
+		</server>
+		<web>
+			<standalone_server>
+				<options>
+					<web_processes timeout_for_inactives="5"/>
+					<filters allow_4dsync_urls="true"/>
+					<cache use_4d_web_cache="false"/>
+				</options>
+				<configuration automatic_session_management="true" port_number="80" session_mode="2">
+					<hosts>
+						<host home_page="index.html" html_root="./DossierWeb/" id="0" name="Default"/>
+					</hosts>
+				</configuration>
+				<log>
+					<backup daily="" hourly="" monthly="" size="0" weekly=""/>
+				</log>
+				<misc/>
+			</standalone_server>
+			<remote>
+				<options>
+					<web_processes timeout_for_inactives="5"/>
+					<filters allow_4dsync_urls="true"/>
+					<cache use_4d_web_cache="false"/>
+				</options>
+				<configuration automatic_session_management="true" session_mode="2"/>
+				<misc/>
+			</remote>
+		</web>
+		<deployment>
+			<options/>
+		</deployment>
+		<php ip_address="127.0.0.1"/>
+	</com.4d>
+</preferences>

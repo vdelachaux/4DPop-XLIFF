@@ -1,0 +1,2 @@
+//%attributes = {}
+xliff_EDITOR

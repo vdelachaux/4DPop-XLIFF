@@ -1,0 +1,1 @@
+XLIFF_EDITOR_PROPERTIES("dialog_1")

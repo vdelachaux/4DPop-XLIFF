@@ -1,0 +1,1 @@
+lstb_AUTOMATIC_SCROOLBARS(Self:C308; "listbox")

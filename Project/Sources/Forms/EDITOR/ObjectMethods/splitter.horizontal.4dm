@@ -1,0 +1,1 @@
+EXECUTE METHOD IN SUBFORM:C1085("details.subform"; "DETAILS_ON_RESIZE"; *; Form event code:C388)

@@ -1,0 +1,197 @@
+{
+	"destination": "detailScreen",
+	"width": 430,
+	"height": 240,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 430,
+					"height": 240,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#FFF49C",
+					"stroke": "transparent"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 430,
+					"height": 14,
+					"fill": "#FFEA3E",
+					"stroke": "transparent"
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 13,
+					"left": 0,
+					"width": 430,
+					"stroke": "#C2A708"
+				},
+				"Bouton invisible1": {
+					"type": "button",
+					"top": 0,
+					"left": 0,
+					"width": 430,
+					"height": 14,
+					"dataSource": "<>bUtil",
+					"display": false,
+					"method": "ObjectMethods/Bouton invisible1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 3,
+					"width": 10,
+					"height": 10,
+					"fill": "automatic",
+					"stroke": "#C5A609"
+				},
+				"Bouton invisible2": {
+					"type": "button",
+					"top": 1,
+					"left": 3,
+					"width": 10,
+					"height": 10,
+					"dataSource": "<>bUtil",
+					"display": false,
+					"method": "ObjectMethods/Bouton invisible2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Image2": {
+					"type": "picture",
+					"top": 261,
+					"left": 408,
+					"width": 21,
+					"height": 19,
+					"pictureFormat": "scaled",
+					"picture": "Images/Image2.tif"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 0,
+					"left": -22,
+					"width": 16,
+					"height": 13,
+					"dataSource": "<>focus",
+					"stroke": "#FF6600",
+					"class": "System_Petit",
+					"fill": "#FFFF00",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onGettingFocus"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 17,
+					"left": 3,
+					"width": 424,
+					"height": 218,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "<>Txt_Note",
+					"class": "System_Normal",
+					"fill": "#FFF49C",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onAfterEdit"
+					]
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 250,
+					"left": 0,
+					"width": 47,
+					"height": 20,
+					"dataSource": "OK",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "OK",
+					"class": "System_Petit",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Bouton2": {
+					"type": "button",
+					"top": 284,
+					"left": 4,
+					"width": 95,
+					"height": 26,
+					"dataSource": "<>bUtil",
+					"shortcutKey": "v",
+					"shortcutAccel": true,
+					"text": "Paste",
+					"class": "Default",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"Variable2",
+				"Bouton1",
+				"Bouton2"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "Vue 1",
+		"defaultView": "Vue 1",
+		"views": {
+			"Vue 1": {},
+			"Vue 2": {},
+			"Vue 3": {},
+			"Vue 4": {},
+			"Vue 5": {},
+			"Vue 6": {},
+			"Vue 7": {},
+			"Vue 8": {},
+			"Vue 9": {}
+		}
+	}
+}

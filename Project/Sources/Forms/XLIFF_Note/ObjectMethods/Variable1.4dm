@@ -1,0 +1,1 @@
+<>Txt_Note:=Get edited text:C655
