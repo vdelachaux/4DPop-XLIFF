@@ -388,14 +388,18 @@ If (Length:C16($Txt_path)>0)
 	$Ptr_Search_source:=OBJECT Get pointer:C1124(Object named:K67:5; "search.list.source")
 	$Ptr_Search_target:=OBJECT Get pointer:C1124(Object named:K67:5; "search.list.target")
 	
+	//%W-518.1
 	COPY ARRAY:C226($tLon_id; $Ptr_Search_id->)
 	COPY ARRAY:C226($tTxt_resname; $Ptr_Search_resname->)
 	COPY ARRAY:C226($tTxt_source; $Ptr_Search_source->)
 	COPY ARRAY:C226($tTxt_target; $Ptr_Search_target->)
+	//%W+518.1
 	
 	$Lon_count:=Size of array:C274($tLon_id)
 	$Ptr_Search_order:=OBJECT Get pointer:C1124(Object named:K67:5; "search.list.order")
+	//%W-518.5
 	ARRAY LONGINT:C221($Ptr_Search_order->; $Lon_count)
+	//%W+518.5
 	For ($Lon_i; 1; $Lon_count; 1)
 		
 		$Ptr_Search_order->{$Lon_i}:=$Lon_i

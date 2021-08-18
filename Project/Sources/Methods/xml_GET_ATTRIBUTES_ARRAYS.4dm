@@ -46,6 +46,7 @@ End if
 
 // ----------------------------------------------------
 
+//%W-518.5
 $Lon_count:=DOM Count XML attributes:C727($Dom_node)
 ARRAY TEXT:C222($Ptr_names->; $Lon_count)
 
@@ -67,6 +68,7 @@ Else
 		
 	End for 
 End if 
+//%W+518.5
 
 // ----------------------------------------------------
 // End
