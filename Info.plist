@@ -4,19 +4,19 @@
 
   <dict>
     <key>NSHumanReadableCopyright</key>
-    <string>©VDL 2021</string>
+    <string>©vdl 2007-2022</string>
     <key>CFBundleIdentifier</key>
     <string>com.4D.4Dpop XLIFF</string>
     <key>CFBundleGetInfoString</key>
-    <string>4DPop XLIFF</string>
+    <string>19R6</string>
     <key>CFBundleLongVersionString</key>
-    <string>19R4 (271377)</string>
+    <string>19R6 (301)</string>
     <key>CFBundleShortVersionString</key>
-    <string>19R4 (271377)</string>
+    <string>19R6</string>
     <key>CFBundleExecutable</key>
     <string>4DPop XLIFF</string>
     <key>CFBundleVersion</key>
-    <string>271377</string>
+    <string>301</string>
     <key>CFBundleDevelopmentRegion</key>
     <string>French</string>
     <key>CFBundleDisplayName</key>
