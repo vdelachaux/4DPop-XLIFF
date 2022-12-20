@@ -1,0 +1,709 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": "<Aucun>",
+	"memorizeGeometry": true,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 540,
+	"height": 390,
+	"markerHeader": 3840,
+	"markerBody": -14336,
+	"markerBreak": 609,
+	"markerFooter": 609,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onTimer",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"00.Back.Resize": {
+					"type": "rectangle",
+					"top": 55,
+					"left": 0,
+					"width": 540,
+					"height": 400,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "transparent",
+					"stroke": "transparent"
+				},
+				"Page.Selected": {
+					"type": "picture",
+					"top": 0,
+					"left": 5,
+					"width": 63,
+					"height": 55,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/toolbar_selected.png"
+				},
+				"_line.1": {
+					"type": "line",
+					"top": 55,
+					"left": 270,
+					"height": 455,
+					"visibility": "hidden",
+					"stroke": "#0000FF",
+					"strokeDashArray": "1 1"
+				},
+				"_line.2": {
+					"type": "line",
+					"top": 282,
+					"left": 0,
+					"width": 540,
+					"visibility": "hidden",
+					"stroke": "#0000FF",
+					"strokeDashArray": "1 1"
+				},
+				"Ligne3": {
+					"type": "line",
+					"top": 55,
+					"left": 0,
+					"width": 540,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"00.OK.Move": {
+					"type": "button",
+					"top": 348,
+					"left": 417,
+					"width": 103,
+					"height": 22,
+					"sizingX": "move",
+					"dataSource": "OK",
+					"action": "accept",
+					"text": ":xliff:OKButton",
+					"focusable": false,
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"00.Escape.Move": {
+					"type": "button",
+					"top": 348,
+					"left": 294,
+					"width": 103,
+					"height": 22,
+					"dataSource": "<>bEscape",
+					"action": "cancel",
+					"text": ":xliff:CancelButton",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"_timerEvent": {
+					"type": "input",
+					"top": 0,
+					"left": 553,
+					"width": 96,
+					"height": 16,
+					"dataSourceTypeHint": "number",
+					"stroke": "#FF6600",
+					"focusable": false,
+					"fill": "#FFFF00",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Page.1": {
+					"type": "button",
+					"top": 0,
+					"left": 5,
+					"width": 63,
+					"height": 55,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"focusable": false,
+					"text": ":xliff:General",
+					"icon": "/RESOURCES/images/toolbar_setting.png",
+					"style": "toolbar",
+					"method": "ObjectMethods/Page.1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Page.2": {
+					"type": "button",
+					"top": 0,
+					"left": 75,
+					"width": 63,
+					"height": 55,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"focusable": false,
+					"text": ":xliff:Database",
+					"icon": "/RESOURCES/Images/toolbar_structure.png",
+					"style": "toolbar",
+					"method": "ObjectMethods/Page.2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Page.3": {
+					"type": "button",
+					"top": 0,
+					"left": 147,
+					"width": 63,
+					"height": 55,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"focusable": false,
+					"text": ":xliff:MenuFile",
+					"icon": "/RESOURCES/Images/toolbar_file.png",
+					"style": "toolbar",
+					"method": "ObjectMethods/Page.3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Page.5": {
+					"type": "button",
+					"top": 0,
+					"left": 217,
+					"width": 63,
+					"height": 55,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"focusable": false,
+					"text": ":xliff:Menus_FillIn",
+					"icon": "/RESOURCES/Images/toolbar_edit.png",
+					"style": "toolbar",
+					"method": "ObjectMethods/Page.5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Page.4": {
+					"type": "button",
+					"top": 0,
+					"left": 287,
+					"width": 63,
+					"height": 55,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"focusable": false,
+					"text": ":xliff:Advanced",
+					"icon": "/RESOURCES/images/toolbar_more.png",
+					"style": "toolbar",
+					"method": "ObjectMethods/Page.4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"automatic_font": {
+					"type": "input",
+					"top": 29,
+					"left": 553,
+					"width": 150,
+					"height": 16,
+					"visibility": "hidden",
+					"stroke": "#FF6600",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/automatic_font.4dm",
+					"events": [
+						"onLoad"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zone de groupe": {
+					"type": "groupBox",
+					"top": 64,
+					"left": 20,
+					"width": 500,
+					"height": 81,
+					"text": ":xliff:ResourcesFolder"
+				},
+				"Zone de groupe1": {
+					"type": "groupBox",
+					"top": 160,
+					"left": 20,
+					"width": 500,
+					"height": 170,
+					"text": ":xliff:DefaultValues"
+				},
+				"01.Window.Max": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 560,
+					"width": 10,
+					"height": 390,
+					"fill": "#FFD9C0",
+					"stroke": "#FF6600"
+				},
+				"bResFolderOpen": {
+					"type": "button",
+					"top": 104,
+					"left": 40,
+					"width": 91,
+					"height": 17,
+					"text": ":xliff:CommonOpen",
+					"focusable": false,
+					"method": "ObjectMethods/bResFolderOpen.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 199,
+					"left": 203,
+					"width": 61,
+					"height": 16,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 199,
+					"left": 419,
+					"width": 61,
+					"height": 16,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"01.Comment.App.Scroll.Box": {
+					"type": "input",
+					"top": 246,
+					"left": 85,
+					"width": 395,
+					"height": 64,
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Texte13": {
+					"type": "text",
+					"top": 199,
+					"left": 55,
+					"width": 128,
+					"height": 16,
+					"textAlign": "right",
+					"text": "XLIFF Version"
+				},
+				"Texte14": {
+					"type": "text",
+					"top": 199,
+					"left": 271,
+					"width": 128,
+					"height": 16,
+					"textAlign": "right",
+					"text": "XML Encoding"
+				},
+				"File_Path": {
+					"type": "button",
+					"top": 101,
+					"left": 151,
+					"width": 350,
+					"height": 22,
+					"sizingX": "grow",
+					"dataSource": "<>bPath",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"focusable": false,
+					"text": "CALCULATED TITLE",
+					"popupPlacement": "linked",
+					"textPlacement": "right",
+					"style": "office",
+					"method": "ObjectMethods/File_Path.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick",
+						"onLongClick"
+					]
+				},
+				"01.ThisPage.1": {
+					"type": "text",
+					"top": 226,
+					"left": 85,
+					"width": 137,
+					"height": 16,
+					"text": ":xliff:Comments"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zone de groupe2": {
+					"type": "groupBox",
+					"top": 64,
+					"left": 20,
+					"width": 500,
+					"height": 126,
+					"text": ":xliff:Languages"
+				},
+				"02.Window.Max": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 560,
+					"width": 10,
+					"height": 250,
+					"fill": "#FFD9C0",
+					"stroke": "#FF6600"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 99,
+					"left": 159,
+					"width": 70,
+					"height": 16,
+					"textAlign": "right",
+					"text": "source"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 141,
+					"left": 159,
+					"width": 70,
+					"height": 16,
+					"textAlign": "right",
+					"text": "target"
+				},
+				"Popup Liste déroulante1": {
+					"type": "dropdown",
+					"top": 96,
+					"left": 249,
+					"width": 125,
+					"height": 22,
+					"dataSource": "<>tTxt_Sources",
+					"textAlign": "center",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Popup Liste déroulante3": {
+					"type": "dropdown",
+					"top": 138,
+					"left": 249,
+					"width": 125,
+					"height": 22,
+					"dataSource": "<>tTxt_Targets",
+					"textAlign": "center",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zone de groupe4": {
+					"type": "groupBox",
+					"top": 64,
+					"left": 20,
+					"width": 500,
+					"height": 216
+				},
+				"03.Window.Max": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 560,
+					"width": 10,
+					"height": 340,
+					"fill": "#FFD9C0",
+					"stroke": "#FF6600"
+				},
+				"file.xliff.version": {
+					"type": "input",
+					"top": 81,
+					"left": 289,
+					"width": 61,
+					"height": 16,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"file.xml.encoding": {
+					"type": "input",
+					"top": 117,
+					"left": 289,
+					"width": 61,
+					"height": 16,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"file.comment": {
+					"type": "input",
+					"top": 163,
+					"left": 56,
+					"width": 431,
+					"height": 96,
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 81,
+					"left": 141,
+					"width": 128,
+					"height": 16,
+					"textAlign": "right",
+					"text": "XLIFF Version"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 117,
+					"left": 141,
+					"width": 128,
+					"height": 16,
+					"textAlign": "right",
+					"text": "XML Encoding"
+				},
+				"Comment.label": {
+					"type": "text",
+					"top": 143,
+					"left": 54,
+					"width": 137,
+					"height": 16,
+					"text": ":xliff:Comments"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zone de groupe5": {
+					"type": "groupBox",
+					"top": 64,
+					"left": 20,
+					"width": 500,
+					"height": 66
+				},
+				"drop_resname": {
+					"type": "radio",
+					"top": 77,
+					"left": 280,
+					"width": 133,
+					"height": 12,
+					"text": "\":xliff:resname\"",
+					"radioGroup": "Group23"
+				},
+				"drop_string": {
+					"type": "radio",
+					"top": 98,
+					"left": 280,
+					"width": 116,
+					"height": 12,
+					"text": "\":ID:Index\"",
+					"radioGroup": "Group23"
+				},
+				"04.Window.Max": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 560,
+					"width": 10,
+					"height": 190,
+					"fill": "#FFD9C0",
+					"stroke": "#FF6600"
+				},
+				"Texte": {
+					"type": "text",
+					"top": 75,
+					"left": 27,
+					"width": 243,
+					"height": 16,
+					"textAlign": "right",
+					"text": ":xliff:DragAndDropInForm"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zone de groupe3": {
+					"type": "groupBox",
+					"top": 64,
+					"left": 20,
+					"width": 500,
+					"height": 216
+				},
+				"ignored_characters": {
+					"type": "input",
+					"top": 84,
+					"left": 271,
+					"width": 237,
+					"height": 16,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Comment.label3": {
+					"type": "text",
+					"top": 84,
+					"left": 85,
+					"width": 174,
+					"height": 16,
+					"textAlign": "right",
+					"text": ":xliff:EscapedCharacters"
+				},
+				"max_resname_size": {
+					"type": "input",
+					"top": 112,
+					"left": 271,
+					"width": 64,
+					"height": 16,
+					"dataSourceTypeHint": "number",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"numberFormat": "###0;###0;None",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Comment.label4": {
+					"type": "text",
+					"top": 112,
+					"left": 26,
+					"width": 233,
+					"height": 16,
+					"textAlign": "right",
+					"text": ":xliff:MaximumSizeOfTheResname"
+				},
+				"05.Window.Max": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 560,
+					"width": 10,
+					"height": 340,
+					"fill": "#FFD9C0",
+					"stroke": "#FF6600"
+				},
+				"group": {
+					"type": "radio",
+					"top": 166,
+					"left": 129,
+					"width": 218,
+					"height": 18,
+					"dataSource": "<>bR_3",
+					"text": ":xliff:UseGroupsResname",
+					"radioGroup": "Groupe20",
+					"method": "ObjectMethods/group.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"prefix": {
+					"type": "radio",
+					"top": 232,
+					"left": 129,
+					"width": 218,
+					"height": 18,
+					"dataSource": "<>bR_4",
+					"text": ":xliff:UsePrefix",
+					"radioGroup": "Groupe20",
+					"method": "ObjectMethods/prefix.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 189,
+					"left": 344,
+					"width": 61,
+					"height": 16,
+					"dataSource": "<>Txt_prefixSeparator",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 234,
+					"left": 344,
+					"width": 63,
+					"height": 16,
+					"dataSource": "<>Txt_prefix",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 189,
+					"left": 156,
+					"width": 168,
+					"height": 16,
+					"textAlign": "right",
+					"text": ":xliff:SeparatingCharacter"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group23": [
+				"drop_resname",
+				"drop_string"
+			],
+			"Groupe20": [
+				"group",
+				"prefix"
+			]
+		},
+		"activeView": "Vue 1",
+		"defaultView": "Vue 1",
+		"views": {
+			"Vue 1": {},
+			"Vue 2": {},
+			"Vue 3": {},
+			"Vue 4": {},
+			"Vue 5": {},
+			"Vue 6": {},
+			"Vue 7": {},
+			"Vue 8": {},
+			"Vue 9": {}
+		}
+	}
+}
